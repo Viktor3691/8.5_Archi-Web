@@ -41,7 +41,7 @@ ul {
 /* --- Шапка --- */
 .header {
   margin: 0 auto;
-  margin-top: 51px;
+  padding-top: 51px;
   background-color: #ffffff;
   max-width: 1440px;
 }
