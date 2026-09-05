@@ -9,6 +9,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   line-height: 1.6;
+  background-color: #e5e5e5;
 }
 
 img {
@@ -39,7 +40,10 @@ ul {
 
 /* --- Шапка --- */
 .header {
+  margin: 0 auto;
   margin-top: 51px;
+  background-color: #ffffff;
+  max-width: 1440px;
 }
 
 .header__inner {
@@ -148,6 +152,9 @@ ul {
 
 /* --- Hero --- */
 .hero {
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 1440px;
   padding: 50px 0;
 }
 
@@ -222,7 +229,9 @@ ul {
 
 /* --- About Us --- */
 .about {
-  padding: 80px 0;
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .about__inner {
@@ -261,7 +270,9 @@ ul {
 
 /* --- Projects --- */
 .projects {
-  padding: 80px 0;
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .projects__grid {
@@ -285,7 +296,9 @@ ul {
 
 /* --- Testimonials --- */
 .testimonials {
-  padding: 80px 0;
+  background-color: #ffffff;
+  margin: 0 auto;
+  max-width: 1440px;
 }
 
 .testimonials__grid {
