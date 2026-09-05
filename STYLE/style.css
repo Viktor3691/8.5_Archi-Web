@@ -39,7 +39,7 @@ ul {
 
 /* --- Шапка --- */
 .header {
-  margin-top: 50px;
+  margin-top: 51px;
 }
 
 .header__inner {
@@ -53,12 +53,12 @@ ul {
   width: 210px;
   height: 50px;
   padding-left: 24px;
-  letter-spacing: 0.7;
+  letter-spacing: 0.02px;
 
   font-family: "Barlow";
   font-style: normal;
   font-weight: 600;
-  font-size: 42px;
+  font-size: 41px;
   line-height: 50px;
 
   color: #2f2e2e;
@@ -66,13 +66,10 @@ ul {
 
 .nav {
   display: flex;
-  align-items: center;
-  gap: 30px;
 }
 
 .nav__list {
   display: flex;
-  gap: 30px;
 }
 
 .nav__link {
@@ -84,8 +81,7 @@ ul {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 24px;
-  text-align: center;
+  margin-right: 24px;
 
   color: #2f2e2e;
 }
@@ -129,8 +125,6 @@ ul {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
-  text-align: center;
 
   color: #2f2e2e;
 }
@@ -142,7 +136,8 @@ ul {
 
 .search-icon {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
+  margin-right: 24px;
 }
 
 .burger {
