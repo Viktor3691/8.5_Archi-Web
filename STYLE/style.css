@@ -26,9 +26,8 @@ ul {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .section-title {
@@ -40,7 +39,7 @@ ul {
 
 /* --- Шапка --- */
 .header {
-  padding: 20px 0;
+  margin-top: 50px;
 }
 
 .header__inner {
@@ -50,8 +49,19 @@ ul {
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: 700;
+  /* ArchiWeb */
+  width: 210px;
+  height: 50px;
+  padding-left: 24px;
+  letter-spacing: 0.7;
+
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+
+  color: #2f2e2e;
 }
 
 .nav {
@@ -63,6 +73,66 @@ ul {
 .nav__list {
   display: flex;
   gap: 30px;
+}
+
+.nav__link {
+  /* Home */
+  width: 58px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #2f2e2e;
+}
+
+.nav__link:nth-child(2) {
+  /* Projects */
+  width: 77px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #2f2e2e;
+}
+
+.nav__link:nth-child(3) {
+  /* About */
+  width: 57px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #2f2e2e;
+}
+
+.nav__link:nth-child(4) {
+  /* Contact */
+  width: 76px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #2f2e2e;
 }
 
 .nav__link:hover,
