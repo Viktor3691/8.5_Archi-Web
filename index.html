@@ -7,6 +7,9 @@
     <!-- Preconnect для Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./STYLE/style.css" />
     <title>ArchiWeb — архитектурное бюро</title>
 </head>
@@ -30,12 +33,15 @@
     </nav>
 
     <!-- ===== ШАПКА (Hero) ===== -->
-    <header id="home" class="container  header">
+    <header id="home" class="container__hero  header">
         <div class="header__inner">
             <div class="header__content">
-                <h1 class="heading-primary">Best Solution For <br /> Your Home</h1>
-                <p class="header__subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                <h1 class="heading-primary h1-hero">Best Solution For <br>
+                    Your Home</h1>
+                <p class="header__subtitle p-hero">
+                    Lorem ipsum dolor sit amet, <br>
+                    consectetur adipiscing elit ut <br>
+                    aliquam, purus sit amet
                 </p>
             </div>
         </div>
@@ -66,54 +72,60 @@
     </section>
 
     <!-- ===== О НАС ===== -->
-    <section id="about" class="container about">
-        <div class="about__inner">
+    <section id="about" class="about">
+        <div class="about__container about__inner">
             <div class="about__image">
                 <img src="./images/blueprint.png" alt="Чертеж архитектурного плана" />
             </div>
             <div class="about__content">
                 <h2 class="heading-secondary">About Us</h2>
                 <p class="about__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
-                    lectus magna fringilla urna, porttitor
+                    Lorem ipsum dolor sit amet, <br>
+                    consectetur adipiscing elit ut <br>
+                    aliquam, purus sit amet luctus <br>
+                    venenatis, lectus magna fringilla <br>
+                    urna, porttitor
                 </p>
-                <a href="#" class="about__readmore">Read more</a>
+                <div class="readmore_marking">
+                    <a href="#" class="about__readmore">Read more</a>
+                </div>
+
             </div>
         </div>
     </section>
 
     <!-- ===== ПРОЕКТЫ ===== -->
     <section id="projects" class="container projects">
-        <div>
+        <div class="container__size-projects">
             <h2 class="heading-secondary projects__title">Our Projects</h2>
             <div class="projects__grid">
                 <figure class="projects__item">
                     <img src="./images/Project 1.png" alt="Современный жилой дом" class="projects__img" />
-                    <figcaption>Жилой дом в стиле модерн</figcaption>
+                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 2.png" alt="Офисное здание с панорамным остеклением"
                         class="projects__img" />
-                    <figcaption>Бизнес-центр с панорамными окнами</figcaption>
+                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 3.png" alt="Интерьер гостиной в скандинавском стиле"
                         class="projects__img" />
-                    <figcaption>Интерьер гостиной</figcaption>
+                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 4.png" alt="Экстерьер загородного коттеджа" class="projects__img" />
-                    <figcaption>Загородный коттедж</figcaption>
+                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 5.png" alt="Проект ресторана с открытой террасой"
                         class="projects__img" />
-                    <figcaption>Ресторан на побережье</figcaption>
+                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 6.png" alt="Дизайн интерьера спальни в неоклассике"
                         class="projects__img" />
-                    <figcaption>Спальня в неоклассическом стиле</figcaption>
+                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
                 </figure>
             </div>
         </div>
@@ -129,16 +141,20 @@
                         class="testimonials__avatar" />
                     <div class="testimonials__text">
                         <h3 class="testimonials__name">James Passaquindici Arcand</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit ut <br>
+                            aliquam, purus sit amet luctus venenatis</p>
                     </div>
                 </div>
                 <div class="testimonials__item">
                     <img src="./images/avatar-2.png" alt="Фото Abram Schleifer" class="testimonials__avatar" />
                     <div class="testimonials__text">
                         <h3 class="testimonials__name">Abram Schleifer</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
-                            venenatis</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, <br>
+                            consectetur adipiscing elit ut <br>
+                            aliquam, purus sit amet luctus venenatis</p>
                     </div>
                 </div>
             </div>

@@ -26,23 +26,45 @@ body {
   margin: 0 auto;
 }
 
+h1,
+h2,
+h3 {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
 section {
   background-color: #ffffff;
 }
+figure {
+  padding: 0;
+  margin: 0;
+}
 /* ===== КЛАССЫ ЗАГОЛОВКОВ (вместо глобальных) ===== */
 .heading-primary {
+  /* Best Solution For Your Home */
   font-size: 51px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   font-weight: 800;
-  line-height: 1.2;
-  margin: 0 0 0.5rem;
+  text-align: left;
+  line-height: 67px;
+  letter-spacing: 0.2px;
+  color: #2f2e2e;
 }
 
 .heading-secondary {
-  font-size: 42px;
-  font-family: "Playfair Display", serif;
+  /* Our Services */
+  font-family: "Playfair Display";
+  font-size: 51px;
+  line-height: 60px;
   font-weight: 800;
-  margin: 0 0 1rem;
+
+  color: #2f2e2e;
 }
 
 /* ===== НАВИГАЦИЯ ===== */
@@ -53,21 +75,31 @@ section {
   padding: 20px 30px;
   flex-wrap: wrap;
   background-color: #ffffff;
+  padding-top: 47px;
+  padding-bottom: 91px;
 }
 
 .nav__logo {
+  /* ArchiWeb */
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 600;
   font-size: 42px;
-  font-family: "Barlow", sans-serif;
-  font-weight: bold;
+  line-height: 50px;
+
+  color: #2f2e2e;
+  margin-left: 65px;
 }
 
 .nav__list {
   display: flex;
   list-style: none;
-  gap: 60px;
+  gap: 100px;
   margin: 0;
   padding: 0;
   align-items: center;
+  padding-top: 10px;
+  padding-left: 315px;
 }
 
 .nav__list a {
@@ -84,6 +116,10 @@ section {
   font-weight: 800;
 }
 
+.nav__search {
+  margin-right: 70px;
+  margin-top: 14px;
+}
 .nav__search img {
   display: block;
   width: 24px;
@@ -101,6 +137,13 @@ section {
 }
 
 /* ===== ШАПКА ===== */
+.container__hero {
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 0;
+  margin: 0 auto;
+}
+
 .header {
   background-image: url(../images/hero.png);
   background-repeat: no-repeat;
@@ -117,36 +160,59 @@ section {
 
 .header__content {
   max-width: 691px;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 70px 40px;
+  height: 550px;
+  padding-top: 95px;
   text-align: center;
-  border-radius: 8px;
+
+  background: linear-gradient(
+    91.1deg,
+    rgba(244, 246, 245, 0.9) -7.89%,
+    rgba(255, 255, 255, 0.9) 132.55%
+  );
+}
+
+.h1-hero {
+  padding-top: 44px;
+  padding-left: 100px;
 }
 
 .header__subtitle {
-  font-size: 32px;
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet */
+  max-width: 600px;
+
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 200;
-  max-width: 438px;
-  margin: 0 auto;
-  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  text-align: left;
+  line-height: 44px;
+  letter-spacing: 0.13px;
+
+  color: #2f2e2e;
+}
+
+.p-hero {
+  padding-top: 10px;
+  padding-left: 100px;
 }
 
 /* ===== УСЛУГИ ===== */
 .services {
+  min-height: 384px;
   background: rgba(37, 77, 77, 0.1);
-  padding: 30px 0 50px;
 }
 
 .services__title {
   text-align: center;
-  margin-bottom: 40px;
+  padding-top: 20px;
 }
 
 .services__block {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 135px;
+  padding-top: 48px;
 }
 
 .services__item {
@@ -155,54 +221,62 @@ section {
 }
 
 .services__icon {
-  width: 64px;
-  height: 64px;
+  width: 103px;
+  height: 103px;
 }
 
 .services__name {
   font-size: 27px;
   font-weight: 700;
   font-family: "Playfair Display", serif;
-  margin: 10px 0 0;
+  margin-bottom: 15px;
 }
 
 .services__desc {
-  font-size: 17px;
-  font-family: "Playfair Display", serif;
-  margin: 5px 0 0;
+  /* Our Services Line one Servive line two */
+
+  font-family: "Playfair Display";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #2f2e2e;
 }
 
 /* ===== О НАС ===== */
 .about {
-  padding: 60px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 571px;
+}
+
+.about__container {
+  padding-top: 76px;
+  margin-left: 100px;
+  margin-right: 64px;
 }
 
 .about__inner {
   display: flex;
   align-items: center;
-  gap: 40px;
+
   background-color: #ffffff;
 }
 
 .about__image {
-  flex: 1;
-}
-
-.about__image img {
-  width: 100%;
-  height: auto;
-  display: block;
+  flex: 0.89;
 }
 
 .about__content {
-  flex: 1;
+  padding-left: 89px;
+  padding-bottom: 33px;
 }
 
 .about__text {
   font-size: 31px;
-  font-family: "Playfair Display", serif;
-  max-width: 456px;
-  margin: 0 0 1.5rem;
+  font-family: "Playfair Display";
+  padding-top: 22px;
+  line-height: 50px;
 }
 
 .about__readmore {
@@ -214,29 +288,39 @@ section {
   cursor: pointer;
 }
 
+.readmore_marking {
+  padding-top: 30px;
+}
+
 .about__readmore:hover {
   opacity: 0.8;
 }
 
 /* ===== ПРОЕКТЫ ===== */
 .projects {
-  padding: 30px 0 60px;
+  padding-top: 25px;
 }
 
+.container__size-projects {
+  padding-left: 18px;
+  padding-right: 18px;
+}
 .projects__title {
-  text-align: center;
-  margin-bottom: 40px;
+  padding-top: 70px;
+  padding-left: 46px;
 }
 
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+
   justify-items: center;
+  padding-top: 75px;
 }
 
 .projects__item {
   text-align: center;
+  padding-bottom: 89px;
 }
 
 .projects__img {
@@ -252,46 +336,48 @@ section {
 
 .projects__item figcaption {
   font-size: 17px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
   margin-top: 8px;
 }
 
 /* ===== ОТЗЫВЫ ===== */
 .testimonials {
-  padding: 20px 0 80px;
+  min-height: 453px;
 }
 
 .testimonials__title {
   text-align: center;
-  margin-bottom: 40px;
+  padding-top: 10px;
 }
 
 .testimonials__grid {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 145px;
+  padding-top: 80px;
+  padding-right: 90px;
 }
 
 .testimonials__item {
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 500px;
+  max-width: 570px;
 }
 
 .testimonials__avatar {
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 151px;
+  height: 151px;
   object-fit: cover;
 }
 
 .testimonials__name {
+  max-width: 370px;
   font-size: 28px;
   font-weight: 600;
   font-family: "Playfair Display", serif;
-  margin: 0 0 0.3rem;
 }
 
 .testimonials__text p {
@@ -321,7 +407,7 @@ section {
 
 .footer__left {
   display: flex;
-  gap: 80px;
+  gap: 150px;
   flex-wrap: wrap;
 }
 
@@ -359,17 +445,15 @@ section {
 .footer__articles-title {
   font-size: 24px;
   font-weight: 800;
-  margin: 0 0 15px;
 }
 
 .footer__articles ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding-bottom: -20px;
 }
 
 .footer__articles li {
-  margin-bottom: 10px;
+  padding-top: 2px;
 }
 
 .footer__articles a {
