@@ -8,15 +8,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./STYLE/style.css" />
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Playfair+Display:wght@400;700;800&family=Inter:wght@200;400;500;600;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>ArchiWeb — архитектурное бюро</title>
 </head>
 
 <body>
+
     <!-- ===== НАВИГАЦИЯ ===== -->
-    <nav class="container nav" aria-label="Главная навигация">
+    <nav class="container nav" id="nav" aria-label="Главная навигация">
         <div class="nav__logo">ArchiWeb</div>
         <ul class="nav__list">
             <li><a href="#home" class="active">Home</a></li>
@@ -27,29 +28,26 @@
         <a href="#" class="nav__search" aria-label="Поиск">
             <img src="./images/search.png" alt="Иконка поиска" />
         </a>
-        <!-- Бургер-меню (отображается на мобильных) -->
-        <a href="#nav-open" class="nav__burger" id="nav-open" aria-label="Открыть меню">☰</a>
+        <!-- Бургер-меню -->
+        <a href="#nav" class="nav__burger" aria-label="Открыть меню">☰</a>
         <a href="#" class="nav__burger-close" aria-label="Закрыть меню">✕</a>
     </nav>
 
     <!-- ===== ШАПКА (Hero) ===== -->
-    <header id="home" class="container__hero  header">
-        <div class="header__inner">
+    <header id="home" class="header">
+        <div class="container header__inner">
             <div class="header__content">
-                <h1 class="heading-primary h1-hero">Best Solution For <br>
-                    Your Home</h1>
-                <p class="header__subtitle p-hero">
-                    Lorem ipsum dolor sit amet, <br>
-                    consectetur adipiscing elit ut <br>
-                    aliquam, purus sit amet
+                <h1 class="heading-primary">Best Solution For <br /> Your Home</h1>
+                <p class="header__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
                 </p>
             </div>
         </div>
     </header>
 
     <!-- ===== УСЛУГИ ===== -->
-    <section class="container services">
-        <div>
+    <section class="services">
+        <div class="container">
             <h2 class="heading-secondary services__title">Our Services</h2>
             <div class="services__block">
                 <article class="services__item">
@@ -73,67 +71,61 @@
 
     <!-- ===== О НАС ===== -->
     <section id="about" class="about">
-        <div class="about__container about__inner">
+        <div class="container about__inner">
             <div class="about__image">
                 <img src="./images/blueprint.png" alt="Чертеж архитектурного плана" />
             </div>
             <div class="about__content">
                 <h2 class="heading-secondary">About Us</h2>
                 <p class="about__text">
-                    Lorem ipsum dolor sit amet, <br>
-                    consectetur adipiscing elit ut <br>
-                    aliquam, purus sit amet luctus <br>
-                    venenatis, lectus magna fringilla <br>
-                    urna, porttitor
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis,
+                    lectus magna fringilla urna, porttitor
                 </p>
-                <div class="readmore_marking">
-                    <a href="#" class="about__readmore">Read more</a>
-                </div>
-
+                <a href="#" class="about__readmore">Read more</a>
             </div>
         </div>
     </section>
 
     <!-- ===== ПРОЕКТЫ ===== -->
-    <section id="projects" class="container projects">
-        <div class="container__size-projects">
+    <section id="projects" class="projects">
+        <div class="container">
             <h2 class="heading-secondary projects__title">Our Projects</h2>
             <div class="projects__grid">
                 <figure class="projects__item">
                     <img src="./images/Project 1.png" alt="Современный жилой дом" class="projects__img" />
-                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
+                    <figcaption>Our Services Line one<br /> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 2.png" alt="Офисное здание с панорамным остеклением"
                         class="projects__img" />
-                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
+                    <figcaption>Our Services Line one<br /> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 3.png" alt="Интерьер гостиной в скандинавском стиле"
                         class="projects__img" />
-                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
+                    <figcaption>Our Services Line one<br /> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 4.png" alt="Экстерьер загородного коттеджа" class="projects__img" />
-                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
+                    <figcaption>Our Services Line one<br /> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 5.png" alt="Проект ресторана с открытой террасой"
                         class="projects__img" />
-                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
+                    <figcaption>Our Services Line one<br /> Servive line two</figcaption>
                 </figure>
                 <figure class="projects__item">
                     <img src="./images/Project 6.png" alt="Дизайн интерьера спальни в неоклассике"
                         class="projects__img" />
-                    <figcaption>Our Services Line one<br> Servive line two</figcaption>
+                    <figcaption>Our Services Line one<br /> Servive line two</figcaption>
                 </figure>
             </div>
         </div>
     </section>
 
     <!-- ===== ОТЗЫВЫ ===== -->
-    <section class="container testimonials">
-        <div>
+    <section class="testimonials">
+        <div class="container">
             <h2 class="heading-secondary testimonials__title">Testimonial</h2>
             <div class="testimonials__grid">
                 <div class="testimonials__item">
@@ -141,20 +133,16 @@
                         class="testimonials__avatar" />
                     <div class="testimonials__text">
                         <h3 class="testimonials__name">James Passaquindici Arcand</h3>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, <br>
-                            consectetur adipiscing elit ut <br>
-                            aliquam, purus sit amet luctus venenatis</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                            venenatis</p>
                     </div>
                 </div>
                 <div class="testimonials__item">
                     <img src="./images/avatar-2.png" alt="Фото Abram Schleifer" class="testimonials__avatar" />
                     <div class="testimonials__text">
                         <h3 class="testimonials__name">Abram Schleifer</h3>
-                        <br>
-                        <p>Lorem ipsum dolor sit amet, <br>
-                            consectetur adipiscing elit ut <br>
-                            aliquam, purus sit amet luctus venenatis</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus
+                            venenatis</p>
                     </div>
                 </div>
             </div>
@@ -162,8 +150,8 @@
     </section>
 
     <!-- ===== ПОДВАЛ ===== -->
-    <footer id="footer" class="container footer">
-        <div class="footer__container footer__inner">
+    <footer id="footer" class="footer">
+        <div class="container footer__inner">
             <div class="footer__left">
                 <div class="footer__brand">
                     <div class="footer__logo">ArchiWeb</div>
@@ -195,7 +183,7 @@
         </div>
     </footer>
 
-    <!-- Скрипты (оставлены для совместимости, но можно удалить, если не используются) -->
+    <!-- Скрипты -->
     <script src="./js/main.js"></script>
     <script src="./js/materialize.min.js"></script>
 </body>
